@@ -94,7 +94,7 @@ struct MainPage: View {
                                    Spacer()
                                    NavigationLink(destination: BmiCalul()){Image("Calcul").resizable().frame(width: 150, height: 150)}
                                    Spacer()
-                                   NavigationLink(destination: Goal()){
+                                   NavigationLink(destination: Reminder()){
                                        Image("Reminder").resizable().frame(width: 150, height: 150)
                                    }
                                   
@@ -106,7 +106,7 @@ struct MainPage: View {
                                    Spacer()
                                    NavigationLink(destination: Goal()){Image("Goal").resizable().frame(width: 150, height: 150)}
                                    Spacer()
-                                   NavigationLink(destination: Goal()){
+                                   NavigationLink(destination: Add()){
                                        Image("Add").resizable().frame(width: 150, height: 150)
                                    }
                                   
@@ -124,10 +124,35 @@ struct MainPage: View {
     }
 }
 struct Goal: View {
+    @State var text: String = "Cette zone est specialement dediée a vos objectifs."
     var body: some View {
         NavigationView {
                        VStack {
-                           Text("Hello World B")
+
+                           TextEditor(text: $text)
+                       }.navigationBarTitle("")
+                       .navigationBarHidden(true)
+                   }
+    }
+   
+}
+struct Reminder: View {
+    @State var text: String = "Cette zone est specialement dediée a vos rappels de chose a faire ."
+    var body: some View {
+        NavigationView {
+                       VStack {
+
+                           TextEditor(text: $text)
+                       }.navigationBarTitle("")
+                       .navigationBarHidden(true)
+                   }
+    }
+}
+struct Add: View {
+    var body: some View {
+        NavigationView {
+                       VStack {
+                           Text("a suivre")
 
                        }.navigationBarTitle("")
                        .navigationBarHidden(true)
@@ -238,12 +263,20 @@ struct BmiCalul: View {
                         })
                         Spacer()
                     }
-                }.frame(width: 300, height: 400)
-                Text("\(texte)")
+                }.frame(width: 400, height: 400)
+               
+                VStack{
+                    Text(texte != "" ? "\(texte)"  : "Veuillez entrer vos données")
+                   
+                }
                 Spacer()
+                
+                
             }.onTapGesture {
                 hideKeyboard()
             }
+            .frame(width: 400, height: 800)
+            
     }
         }
         
@@ -256,6 +289,11 @@ struct BmiCalul: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+struct BmiCalul_Previews: PreviewProvider {
+    static var previews: some View {
+        BmiCalul()
     }
 }
 
