@@ -24,30 +24,13 @@ extension View {
     }
 }
 
-struct PageControlView: UIViewRepresentable {
-    @Binding var currentPage: Int
-    @Binding var numberOfPages: Int
 
-    func makeUIView(context: Context) -> UIPageControl {
-        let uiView = UIPageControl()
-        uiView.backgroundStyle = .prominent
-        uiView.currentPage = currentPage
-        uiView.numberOfPages = numberOfPages
-        return uiView
-    }
-
-    func updateUIView(_ uiView: UIPageControl, context: Context) {
-        uiView.currentPage = currentPage
-        uiView.numberOfPages = numberOfPages
-       
-    }
-
-}
 
 struct ContentView: View {
+    
     var body: some View {
         VStack {
-            NavigationView{
+            NavigationView(){
                
                 MainPage()
                     
@@ -56,24 +39,9 @@ struct ContentView: View {
         
                 
             
-        }
-}
-
-
-
-struct Goal: View {
-    @State var text: String = "Cette zone est specialement dediée a vos objectifs."
-    var body: some View {
-        NavigationView {
-                       VStack {
-
-                           TextEditor(text: $text)
-                       }.navigationBarTitle("")
-                       .navigationBarHidden(true)
-                   }
     }
-   
 }
+
 struct Reminder: View {
     @State var text: String = "Cette zone est specialement dediée a vos rappels de chose a faire ."
     var body: some View {
@@ -133,7 +101,7 @@ struct Page2: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(ModelData())
     }
 }
 struct BmiCalul_Previews: PreviewProvider {

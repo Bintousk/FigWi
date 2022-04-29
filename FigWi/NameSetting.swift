@@ -24,31 +24,12 @@ struct NameSetting: View {
                 .border(Color("Purple"), width: 3)
                 .cornerRadius(3.0)
             Spacer()
-            VStack {
-                ZStack{
-                    RoundedRectangle(cornerRadius: 100).foregroundColor(Color(hue: 0.899, saturation: 0.009, brightness: 0.978)).shadow(color: .black, radius: 1, x: 0, y: 2)
-                    HStack{
-                        Spacer()
-                        NavigationLink(destination: MainPage()) {
-                            Image("Unknow").resizable().frame(width: 45, height: 45).shadow(color: .black, radius: 2, x: 0, y: 1)
-                        }
-                        Spacer()
-                        NavigationLink(destination: MainPage()) {
-                            Image("Home").resizable().frame(width: 45, height: 45).shadow(color: .black, radius: 2, x: 0, y: 1)
-                        }
-                        Spacer()
-                        NavigationLink(destination: Setting()) {
-                            Image("Setting").resizable().frame(width: 45, height: 45).shadow(color: .black, radius: 2, x: 0, y: 1)
-                        }
-                        Spacer()
-                    }
-                }.frame(width: 300, height: 50)
-            }.frame(width: .infinity, height: 80)
+           BottomBar()
         }.ignoresSafeArea(.all, edges: [.bottom, .leading, .trailing])
             .onTapGesture {
                 hideKeyboard()
             }
-            .frame(width: 500, height: .infinity)
+            .frame(maxWidth: .infinity)
     }
 }
 

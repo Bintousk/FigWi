@@ -17,6 +17,14 @@
 		DDE88B3B281ADFC000F2D7C7 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE88B3A281ADFC000F2D7C7 /* Setting.swift */; };
 		DDE88B3D281AE09100F2D7C7 /* NameSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE88B3C281AE09100F2D7C7 /* NameSetting.swift */; };
 		DDE88B3F281AF24300F2D7C7 /* CalculFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE88B3E281AF24300F2D7C7 /* CalculFunctions.swift */; };
+		DDE88B41281BE98900F2D7C7 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE88B40281BE98900F2D7C7 /* Goal.swift */; };
+		DDE88B43281BEEB800F2D7C7 /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE88B42281BEEB800F2D7C7 /* GoalView.swift */; };
+		DDE88B45281BEED400F2D7C7 /* GoalDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE88B44281BEED400F2D7C7 /* GoalDetailsView.swift */; };
+		DDE88B47281BEFD800F2D7C7 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE88B46281BEFD800F2D7C7 /* ModelData.swift */; };
+		DDE88B49281C2F9400F2D7C7 /* GoalsDataFile.json in Resources */ = {isa = PBXBuildFile; fileRef = DDE88B48281C2F9400F2D7C7 /* GoalsDataFile.json */; };
+		DDE88B4B281C33F600F2D7C7 /* GoalsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE88B4A281C33F600F2D7C7 /* GoalsListView.swift */; };
+		DDE88B4D281C3A2A00F2D7C7 /* FakeJson.json in Resources */ = {isa = PBXBuildFile; fileRef = DDE88B4C281C3A2A00F2D7C7 /* FakeJson.json */; };
+		DDE88B4F281C43B700F2D7C7 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE88B4E281C43B700F2D7C7 /* BottomBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +39,14 @@
 		DDE88B3A281ADFC000F2D7C7 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		DDE88B3C281AE09100F2D7C7 /* NameSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSetting.swift; sourceTree = "<group>"; };
 		DDE88B3E281AF24300F2D7C7 /* CalculFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculFunctions.swift; sourceTree = "<group>"; };
+		DDE88B40281BE98900F2D7C7 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		DDE88B42281BEEB800F2D7C7 /* GoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
+		DDE88B44281BEED400F2D7C7 /* GoalDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailsView.swift; sourceTree = "<group>"; };
+		DDE88B46281BEFD800F2D7C7 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		DDE88B48281C2F9400F2D7C7 /* GoalsDataFile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GoalsDataFile.json; sourceTree = "<group>"; };
+		DDE88B4A281C33F600F2D7C7 /* GoalsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsListView.swift; sourceTree = "<group>"; };
+		DDE88B4C281C3A2A00F2D7C7 /* FakeJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FakeJson.json; sourceTree = "<group>"; };
+		DDE88B4E281C43B700F2D7C7 /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BottomBar.swift; path = FigWi/BottomBar.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,11 +84,19 @@
 				DDE88B2A2817B84A00F2D7C7 /* Assets.xcassets */,
 				DDE88B2C2817B84A00F2D7C7 /* Preview Content */,
 				DDE88B342818296800F2D7C7 /* File.swift */,
+				DDE88B4E281C43B700F2D7C7 /* BottomBar.swift */,
 				DDE88B362819BA9100F2D7C7 /* MainPage.swift */,
 				DDE88B382819BB8200F2D7C7 /* BmiCalul.swift */,
 				DDE88B3A281ADFC000F2D7C7 /* Setting.swift */,
 				DDE88B3C281AE09100F2D7C7 /* NameSetting.swift */,
+				DDE88B4C281C3A2A00F2D7C7 /* FakeJson.json */,
 				DDE88B3E281AF24300F2D7C7 /* CalculFunctions.swift */,
+				DDE88B40281BE98900F2D7C7 /* Goal.swift */,
+				DDE88B46281BEFD800F2D7C7 /* ModelData.swift */,
+				DDE88B42281BEEB800F2D7C7 /* GoalView.swift */,
+				DDE88B44281BEED400F2D7C7 /* GoalDetailsView.swift */,
+				DDE88B48281C2F9400F2D7C7 /* GoalsDataFile.json */,
+				DDE88B4A281C33F600F2D7C7 /* GoalsListView.swift */,
 			);
 			path = FigWi;
 			sourceTree = "<group>";
@@ -145,6 +169,8 @@
 			files = (
 				DDE88B2E2817B84A00F2D7C7 /* Preview Assets.xcassets in Resources */,
 				DDE88B2B2817B84A00F2D7C7 /* Assets.xcassets in Resources */,
+				DDE88B4D281C3A2A00F2D7C7 /* FakeJson.json in Resources */,
+				DDE88B49281C2F9400F2D7C7 /* GoalsDataFile.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,11 +183,17 @@
 			files = (
 				DDE88B292817B84A00F2D7C7 /* ContentView.swift in Sources */,
 				DDE88B352818296800F2D7C7 /* File.swift in Sources */,
+				DDE88B47281BEFD800F2D7C7 /* ModelData.swift in Sources */,
 				DDE88B3D281AE09100F2D7C7 /* NameSetting.swift in Sources */,
+				DDE88B4F281C43B700F2D7C7 /* BottomBar.swift in Sources */,
 				DDE88B3B281ADFC000F2D7C7 /* Setting.swift in Sources */,
 				DDE88B272817B84A00F2D7C7 /* FigWiApp.swift in Sources */,
 				DDE88B3F281AF24300F2D7C7 /* CalculFunctions.swift in Sources */,
+				DDE88B45281BEED400F2D7C7 /* GoalDetailsView.swift in Sources */,
 				DDE88B372819BA9100F2D7C7 /* MainPage.swift in Sources */,
+				DDE88B43281BEEB800F2D7C7 /* GoalView.swift in Sources */,
+				DDE88B41281BE98900F2D7C7 /* Goal.swift in Sources */,
+				DDE88B4B281C33F600F2D7C7 /* GoalsListView.swift in Sources */,
 				DDE88B392819BB8200F2D7C7 /* BmiCalul.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
