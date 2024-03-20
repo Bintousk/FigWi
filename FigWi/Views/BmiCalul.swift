@@ -37,6 +37,7 @@ struct BmiCalul: View {
                         
                         Spacer()
                         Button(action: {
+                            hideKeyboard()
                             let result = CalculOfBMI(poidstr: poidstr, taillestr: taillestr)
                             
                             
@@ -58,17 +59,15 @@ struct BmiCalul: View {
                     
                 }
             }.frame(maxWidth: .infinity)
-                
-
+               
             
             
             Spacer()
             
             BottomBar()
-        }.onTapGesture {
-            hideKeyboard()
         }
-        
+        .ignoresSafeArea(.all, edges: .bottom)
+
         
         
         
@@ -79,7 +78,10 @@ struct BmiCalul: View {
 struct Bmi_Calul_Previews: PreviewProvider {
     static var previews: some View {
         
-            BmiCalul()
+         NavigationView{
+             BmiCalul()
+             
+         }
         
         
     }

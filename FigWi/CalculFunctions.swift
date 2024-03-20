@@ -40,3 +40,8 @@ func CalculOfBMI(poidstr: String, taillestr: String) -> (Double, String) {
     }
     return(resultat, categorie)
 }
+
+func findSubtaskIndex(goal: Goal, id: Int) -> Int{
+    let index = goal.subTasks.firstIndex(where: {$0.id == id})!
+    return index
+}

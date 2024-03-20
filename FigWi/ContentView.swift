@@ -10,8 +10,16 @@ import SwiftUI
 struct HiddenNavigationBar: ViewModifier {
     func body(content: Content) -> some View {
         content
-        .navigationBarTitle("", displayMode: .inline)
-        .navigationBarHidden(true)
+            .navigationBarTitle("", displayMode: .inline)
+            .navigationBarHidden(true)
+    }
+}
+struct ChangeColor: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .navigationBarTitle("", displayMode: .inline)
+            .navigationBarHidden(true)
+            
     }
 }
 
@@ -22,6 +30,7 @@ extension View {
     func hideKeyboard() {
         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
+   
 }
 
 
@@ -29,16 +38,15 @@ extension View {
 struct ContentView: View {
     
     var body: some View {
+       
         VStack {
             NavigationView(){
-               
+                
                 MainPage()
-                    
+                
             }
         }
         
-                
-            
     }
 }
 
@@ -46,57 +54,57 @@ struct Reminder: View {
     @State var text: String = "Cette zone est specialement dediée a vos rappels de chose a faire ."
     var body: some View {
         NavigationView {
-                       VStack {
-
-                           TextEditor(text: $text)
-                       }.navigationBarTitle("")
-                       .navigationBarHidden(true)
-                   }
+            VStack {
+                
+                TextEditor(text: $text)
+            }.navigationBarTitle("")
+                .navigationBarHidden(true)
+        }
     }
 }
 struct Add: View {
     var body: some View {
         NavigationView {
-                       VStack {
-                           Text("a suivre")
-
-                       }.navigationBarTitle("")
-                       .navigationBarHidden(true)
-                   }
+            VStack {
+                Text("a suivre")
+                
+            }.navigationBarTitle("")
+                .navigationBarHidden(true)
+        }
     }
 }
 
 struct Page: View {
-      
-        var body: some View {
-         
-                
-            VStack{
-                Image("Title").resizable().frame(width: 200, height: 30)
-                Spacer()
-                Text("this section is a mock of a the resume of a section ex:  goals ")
-                Spacer()
-            }.foregroundColor(.teal).rotationEffect(.degrees(90)).padding()
-            
-            
-                
-        }
+    
+    var body: some View {
+        
+        
+        VStack{
+            Image("Title").resizable().frame(width: 200, height: 30)
+            Spacer()
+            Text("this section is a mock of a the resume of a section ex:  goals ")
+            Spacer()
+        }.foregroundColor(.teal).rotationEffect(.degrees(90)).padding()
+        
+        
+        
     }
+}
 struct Page2: View {
     
-        var body: some View {
-         
-                
-                    VStack{
-                        Image("Title").resizable().frame(width: 200, height: 30)
-                        Spacer()
-                        Text("this section is a mock of a the resume of a section ex: the reminder")
-                        Spacer()
-                    }.foregroundColor(.teal).rotationEffect(.degrees(90)).padding()
-            
-                
-        }
+    var body: some View {
+        
+        
+        VStack{
+            Image("Title").resizable().frame(width: 200, height: 30)
+            Spacer()
+            Text("this section is a mock of a the resume of a section ex: the reminder")
+            Spacer()
+        }.foregroundColor(.teal).rotationEffect(.degrees(90)).padding()
+        
+        
     }
+}
 
 
 struct ContentView_Previews: PreviewProvider {

@@ -30,6 +30,7 @@ struct NameSetting: View {
                 hideKeyboard()
             }
             .frame(maxWidth: .infinity)
+            .ignoresSafeArea(.all, edges: .bottom)
     }
 }
 

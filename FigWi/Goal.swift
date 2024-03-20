@@ -14,7 +14,7 @@ struct Goal: Hashable, Codable, Identifiable {
     var name: String
     var deadLine: String
     var subTasks: [SubTask]
-
+    var motivation: String
     struct SubTask: Codable, Hashable, Identifiable {
         var accomplished : Bool
         var id: Int

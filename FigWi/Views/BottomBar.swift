@@ -29,6 +29,7 @@ struct BottomBar: View {
                 }
             }.frame(width: 300, height: 50)
         }.frame(width: .infinity, height: 80)
+          
     }
 }
 

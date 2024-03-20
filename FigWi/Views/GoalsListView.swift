@@ -22,7 +22,7 @@ struct GoalsListView: View {
             }
             Spacer()
             BottomBar()
-        }
+        }.ignoresSafeArea(.all, edges: .bottom)
     }
 }
 
