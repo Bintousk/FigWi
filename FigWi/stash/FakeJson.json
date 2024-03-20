@@ -1,40 +1,89 @@
-[{
-    "name": "Read My bible every night",
-    "id": 0
-    "deadLineStr": "2013-07-21T19:32:00Z"
-    "subTasks":[
-        {
-            "id": 0,
-            "name": "sleep early",
-            "accomplished": true
-            
-        },
-        {
-            "id": 1,
-            "name": "take time for meditation",
-            "accomplished": false
-            
-        }
-    ]
-},{
-    "name": "Loose 10 kg",
-    "id":0
-    "deadLineStr" : "18-07-2022"
-    "subTasks" :
-    [
-        {
-            "id": 0,
-            "name": "awake early",
-            "accomplished": true
-            
-        },
-        {
-            "id": 1,
-            "name": "take time for sport",
-            "accomplished": false
-            
-        }
-    ]
-}
+[
+    {
+        "name": "Sleep early",
+        "id": 0,
+        "deadLineStr": "18-07-2024",
+        "subTasks": [
+            {
+                "id": 0,
+                "name": "awake early",
+                "accomplished": true
+            },
+            {
+                "id": 1,
+                "name": "take time for sport",
+                "accomplished": false
+            }
+        ]
+    },
+    {
+        "name": "Read a book every night",
+        "id": 1,
+        "deadLineStr": "2013-07-21T19:32:00Z",
+        "subTasks": [
+            {
+                "id": 0,
+                "name": "sleep early",
+                "accomplished": true
+            },
+            {
+                "id": 1,
+                "name": "take time for meditation",
+                "accomplished": false
+            }
+        ]
+    },
+    {
+        "name": "Read My bible every night",
+        "id": 2,
+        "deadLineStr": "2013-07-21T19:32:00Z",
+        "subTasks": [
+            {
+                "id": 0,
+                "name": "sleep early",
+                "accomplished": true
+            },
+            {
+                "id": 1,
+                "name": "take time for meditation",
+                "accomplished": false
+            }
+        ]
+    },
+    {
+        "name": "Go for a run",
+        "id": 3,
+        "deadLineStr": "2024-03-25",
+        "subTasks": [
+            {
+                "id": 0,
+                "name": "warm-up",
+                "accomplished": true
+            },
+            {
+                "id": 1,
+                "name": "run 5 miles",
+                "accomplished": false
+            }
+        ]
+    },
+    {
+        "name": "Learn a new language",
+        "id": 4,
+        "deadLineStr": "2024-04-30",
+        "subTasks": [
+            {
+                "id": 0,
+                "name": "study grammar",
+                "accomplished": false
+            },
+            {
+                "id": 1,
+                "name": "practice speaking",
+                "accomplished": false
+            }
+        ]
+    }
 ]
+
 

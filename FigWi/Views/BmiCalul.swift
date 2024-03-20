@@ -15,13 +15,13 @@ struct BmiCalul: View {
     var body: some View {
         
         VStack {
-            
+            Text("Calcul your BMI")
             Spacer()
             VStack {
                 Group {
                    
                     VStack{
-                        TextField(" Entrer votre taille (cm)", text:$taillestr).keyboardType(.numberPad).padding()
+                        TextField(" Enter your height. (cm)", text:$taillestr).keyboardType(.numberPad).padding()
                             .frame(width: 300, height: 80)
                             .border(Color.secondary, width: 3)
                             .cornerRadius(3.0)
@@ -29,7 +29,7 @@ struct BmiCalul: View {
                         
                         
                         Spacer()
-                        TextField(" Entrer votre poid (kg)", text:$poidstr).keyboardType(.numberPad)
+                        TextField(" Enter your weight. (kg)", text:$poidstr).keyboardType(.numberPad)
                             .padding()
                             .frame(width: 300, height: 80)
                             .border(Color.secondary, width: 3)
@@ -41,7 +41,7 @@ struct BmiCalul: View {
                             let result = CalculOfBMI(poidstr: poidstr, taillestr: taillestr)
                             
                             
-                            texte = " Votre imc est  \(result.0)\n Vous êtes dans la categorie \(result.1)"
+                            texte = " Your BMI is  \(result.0)\n You are in the category \(result.1)"
                             
                         }, label: {
                             Image("CalculButton").resizable().frame(width: 140.0, height: 70.0).cornerRadius(16.0/*@END_MENU_TOKEN@*/).shadow(radius: /*@START_MENU_TOKEN@*/4)
@@ -55,7 +55,7 @@ struct BmiCalul: View {
                    
                 
                 VStack{
-                    Text(texte != "" ? "\(texte)"  : "Veuillez entrer vos données")
+                    Text(texte != "" ? "\(texte)"  : "Please enter your data.")
                     
                 }
             }.frame(maxWidth: .infinity)

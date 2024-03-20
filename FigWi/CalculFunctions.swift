@@ -19,24 +19,24 @@ func CalculOfBMI(poidstr: String, taillestr: String) -> (Double, String) {
     var categorie = ""
     
     if resultat < 18.5{
-        categorie = "Poids insuffisant "
+        categorie = "Underweight "
         
         
     }
     else if resultat < 25{
-        categorie = "Poids normal "
+        categorie = "Normal weight "
     }
     else if resultat < 30{
-        categorie = "Embonpoint "
+        categorie = "Overweight "
     }
     else if resultat < 35{
-        categorie = "Obesite classe I "
+        categorie = "Obesity class I "
     }
     else if resultat < 39{
-        categorie = "Obesite classe II"
+        categorie = "Obesity class II"
     }
     else {
-        categorie = "Obesite classe III "
+        categorie = "Obesity class III "
     }
     return(resultat, categorie)
 }
